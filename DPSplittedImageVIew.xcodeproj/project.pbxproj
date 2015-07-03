@@ -10,9 +10,7 @@
 		2E8C797F1B46800900E21C19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C797E1B46800900E21C19 /* main.m */; };
 		2E8C79821B46800900E21C19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C79811B46800900E21C19 /* AppDelegate.m */; };
 		2E8C79851B46800900E21C19 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C79841B46800900E21C19 /* ViewController.m */; };
-		2E8C79881B46800900E21C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C79861B46800900E21C19 /* Main.storyboard */; };
 		2E8C798A1B46800900E21C19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C79891B46800900E21C19 /* Images.xcassets */; };
-		2E8C798D1B46800900E21C19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C798B1B46800900E21C19 /* LaunchScreen.xib */; };
 		2E8C79991B46800900E21C19 /* DPSplittedImageVIewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C79981B46800900E21C19 /* DPSplittedImageVIewTests.m */; };
 		2E8C79C61B4680C600E21C19 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C79A71B4680C600E21C19 /* NSData+ImageContentType.m */; };
 		2E8C79C71B4680C600E21C19 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C79A91B4680C600E21C19 /* SDImageCache.m */; };
@@ -29,6 +27,7 @@
 		2E8C79D21B4680C600E21C19 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C79C01B4680C600E21C19 /* UIImageView+HighlightedWebCache.m */; };
 		2E8C79D31B4680C600E21C19 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C79C21B4680C600E21C19 /* UIImageView+WebCache.m */; };
 		2E8C79D41B4680C600E21C19 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C79C41B4680C600E21C19 /* UIView+WebCacheOperation.m */; };
+		2E8C79D81B46814100E21C19 /* DPSplittedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C79D71B46814100E21C19 /* DPSplittedImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +48,7 @@
 		2E8C79811B46800900E21C19 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2E8C79831B46800900E21C19 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2E8C79841B46800900E21C19 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2E8C79871B46800900E21C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E8C79891B46800900E21C19 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2E8C798C1B46800900E21C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2E8C79921B46800900E21C19 /* DPSplittedImageVIewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPSplittedImageVIewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8C79971B46800900E21C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E8C79981B46800900E21C19 /* DPSplittedImageVIewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSplittedImageVIewTests.m; sourceTree = "<group>"; };
@@ -86,6 +83,8 @@
 		2E8C79C21B4680C600E21C19 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		2E8C79C31B4680C600E21C19 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		2E8C79C41B4680C600E21C19 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		2E8C79D61B46814100E21C19 /* DPSplittedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSplittedImageView.h; sourceTree = "<group>"; };
+		2E8C79D71B46814100E21C19 /* DPSplittedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSplittedImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,11 +129,10 @@
 			children = (
 				2E8C79801B46800900E21C19 /* AppDelegate.h */,
 				2E8C79811B46800900E21C19 /* AppDelegate.m */,
+				2E8C79D51B46811800E21C19 /* DPSplittedImageView */,
 				2E8C79831B46800900E21C19 /* ViewController.h */,
 				2E8C79841B46800900E21C19 /* ViewController.m */,
-				2E8C79861B46800900E21C19 /* Main.storyboard */,
 				2E8C79891B46800900E21C19 /* Images.xcassets */,
-				2E8C798B1B46800900E21C19 /* LaunchScreen.xib */,
 				2E8C797C1B46800900E21C19 /* Supporting Files */,
 			);
 			path = DPSplittedImageVIew;
@@ -211,6 +209,15 @@
 			);
 			name = SDWebImage;
 			path = Submodules/SDWebImage/SDWebImage;
+			sourceTree = "<group>";
+		};
+		2E8C79D51B46811800E21C19 /* DPSplittedImageView */ = {
+			isa = PBXGroup;
+			children = (
+				2E8C79D61B46814100E21C19 /* DPSplittedImageView.h */,
+				2E8C79D71B46814100E21C19 /* DPSplittedImageView.m */,
+			);
+			path = DPSplittedImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,8 +300,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E8C79881B46800900E21C19 /* Main.storyboard in Resources */,
-				2E8C798D1B46800900E21C19 /* LaunchScreen.xib in Resources */,
 				2E8C798A1B46800900E21C19 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +335,7 @@
 				2E8C79D31B4680C600E21C19 /* UIImageView+WebCache.m in Sources */,
 				2E8C79C81B4680C600E21C19 /* SDWebImageCompat.m in Sources */,
 				2E8C79CF1B4680C600E21C19 /* UIImage+GIF.m in Sources */,
+				2E8C79D81B46814100E21C19 /* DPSplittedImageView.m in Sources */,
 				2E8C797F1B46800900E21C19 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,25 +357,6 @@
 			targetProxy = 2E8C79931B46800900E21C19 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2E8C79861B46800900E21C19 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2E8C79871B46800900E21C19 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2E8C798B1B46800900E21C19 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2E8C798C1B46800900E21C19 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2E8C799A1B46800900E21C19 /* Debug */ = {
