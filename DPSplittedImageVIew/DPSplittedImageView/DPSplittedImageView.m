@@ -26,6 +26,13 @@
             [self addSubview:currentImageView];
         }
     }
+    
+    if (self.borderColor) {
+        for (UIImageView* imageView in imageViews) {
+            [imageView.layer setBorderColor:self.borderColor.CGColor];
+            [imageView.layer setBorderWidth:1];
+        }
+    }
 }
 
 -(void)createNeededImageViewsForNumberOfImages:(NSInteger)countImages{

@@ -14,4 +14,6 @@
 
 -(void)setRemoteImageUrls:(NSArray*)remoteImageUrls; //NSArray of NSURLs
 
+@property(nonatomic,strong) UIColor *borderColor;
+
 @end
