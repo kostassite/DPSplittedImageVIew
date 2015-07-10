@@ -16,4 +16,6 @@
 
 @property (nonatomic,strong) UILabel *moreLabel;
 
+@property(nonatomic,strong) UIColor *borderColor;
+
 @end

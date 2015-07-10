@@ -42,6 +42,13 @@
         [self.moreLabel setText:[NSString stringWithFormat:@"+%d",(int)remoteImageUrls.count-3]];
         [self addSubview:self.moreLabel];
     }
+    
+    if (self.borderColor) {
+        for (UIImageView* imageView in imageViews) {
+            [imageView.layer setBorderColor:self.borderColor.CGColor];
+            [imageView.layer setBorderWidth:1];
+        }
+    }
 }
 
 -(void)createNeededImageViewsForNumberOfImages:(NSInteger)countImages{
