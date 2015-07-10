@@ -40,7 +40,6 @@
         
         //set moreLabel
         [self.moreLabel setText:[NSString stringWithFormat:@"+%d",(int)remoteImageUrls.count-3]];
-        [self addSubview:self.moreLabel];
     }
     
     if (self.borderColor) {
@@ -126,11 +125,21 @@
         [imageViews addObject:thirdImageView];
         
         frame.origin.y = frame.size.height;
+
+        
+        self.moreContainerView = [[UIView alloc]initWithFrame:frame];
+        [self.moreContainerView setBackgroundColor:self.borderColor];
+        [self addSubview:self.moreContainerView];
+        frame.origin = CGPointMake(0, 0);
+        frame.size.width *= 0.7;
+        frame.size.height *= 0.7;
+        
         self.moreLabel = [[UILabel alloc]initWithFrame:frame];
-        [self.moreLabel setBackgroundColor:[UIColor colorWithRed:156/255.0 green:198/255.0 blue:110/255.0 alpha:1]];
-        [self.moreLabel setFont:[UIFont systemFontOfSize:14]];
+        [self.moreLabel setFont:[UIFont boldSystemFontOfSize:13]];
         [self.moreLabel setTextColor:[UIColor whiteColor]];
         [self.moreLabel setTextAlignment:NSTextAlignmentCenter];
+        
+        [self.moreContainerView addSubview:self.moreLabel];
     }
 }
 

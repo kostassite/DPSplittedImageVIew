@@ -15,6 +15,7 @@
 -(void)setRemoteImageUrls:(NSArray*)remoteImageUrls; //NSArray of NSURLs
 
 @property (nonatomic,strong) UILabel *moreLabel;
+@property (nonatomic,strong) UIView *moreContainerView;
 
 @property(nonatomic,strong) UIColor *borderColor;
 
