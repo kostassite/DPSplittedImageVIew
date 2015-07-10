@@ -21,7 +21,7 @@
     [super viewDidLoad];
     splittedImageView = [[DPSplittedImageView alloc]initWithFrame:CGRectMake(50, 50, 100, 100)];
     [self.view addSubview:splittedImageView];
-    [splittedImageView setRemoteImageUrls:[self fourUrlArray]];
+    [splittedImageView setRemoteImageUrls:[self fiveUrlArray]];
 
 }
 
@@ -49,6 +49,14 @@
     return @[[NSURL URLWithString:@"http://www.staylocal.org/sites/default/files/present-box-3007278.jpg"],
              [NSURL URLWithString:@"http://images4.fanpop.com/image/photos/22500000/Gift-Present-cynthia-selahblue-cynti19-22541940-325-325.jpg"],
              [NSURL URLWithString:@"http://images4.fanpop.com/image/photos/22200000/White-present-white-22226613-2048-2193.jpg"],
+             [NSURL URLWithString:@"http://www.clker.com/cliparts/q/r/L/5/t/k/pink-present-box-hi.png"]];
+}
+
+-(NSArray*)fiveUrlArray{
+    return @[[NSURL URLWithString:@"http://www.staylocal.org/sites/default/files/present-box-3007278.jpg"],
+             [NSURL URLWithString:@"http://images4.fanpop.com/image/photos/22500000/Gift-Present-cynthia-selahblue-cynti19-22541940-325-325.jpg"],
+             [NSURL URLWithString:@"http://images4.fanpop.com/image/photos/22200000/White-present-white-22226613-2048-2193.jpg"],
+             [NSURL URLWithString:@"http://www.clker.com/cliparts/q/r/L/5/t/k/pink-present-box-hi.png"],
              [NSURL URLWithString:@"http://www.clker.com/cliparts/q/r/L/5/t/k/pink-present-box-hi.png"]];
 }
 
