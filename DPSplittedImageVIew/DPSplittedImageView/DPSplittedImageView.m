@@ -43,10 +43,15 @@
     }
     
     if (self.borderColor) {
-        for (UIImageView* imageView in imageViews) {
-            [imageView.layer setBorderColor:self.borderColor.CGColor];
-            [imageView.layer setBorderWidth:1];
-        }
+        self.borderColor = self.borderColor;
+    }
+}
+
+-(void)setBorderColor:(UIColor *)borderColor{
+    _borderColor = borderColor;
+    for (UIImageView* imageView in imageViews) {
+        [imageView.layer setBorderColor:self.borderColor.CGColor];
+        [imageView.layer setBorderWidth:0.5];
     }
 }
 
