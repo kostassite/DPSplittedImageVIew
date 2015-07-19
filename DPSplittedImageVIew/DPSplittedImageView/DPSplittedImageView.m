@@ -41,7 +41,7 @@
         //set moreLabel
         [self.moreLabel setText:[NSString stringWithFormat:@"+%d",(int)remoteImageUrls.count-3]];
     }
-    
+
     if (self.borderColor) {
         self.borderColor = self.borderColor;
     }
@@ -145,6 +145,12 @@
         [self.moreLabel setTextAlignment:NSTextAlignmentCenter];
         
         [self.moreContainerView addSubview:self.moreLabel];
+    }
+}
+
+-(void)cancelDownloads{
+    for (UIImageView *imgView in imageViews) {
+        [imgView sd_cancelCurrentImageLoad];
     }
 }
 

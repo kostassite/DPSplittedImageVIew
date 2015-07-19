@@ -14,6 +14,8 @@
 
 -(void)setRemoteImageUrls:(NSArray*)remoteImageUrls; //NSArray of NSURLs
 
+-(void)cancelDownloads;
+
 @property (nonatomic,strong) UILabel *moreLabel;
 @property (nonatomic,strong) UIView *moreContainerView;
 
