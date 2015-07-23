@@ -12,7 +12,10 @@
 @implementation DPSplittedImageView
 
 -(void)setRemoteImageUrls:(NSArray*)remoteImageUrls{
-    [self createNeededImageViewsForNumberOfImages:[remoteImageUrls count]];
+    if (!imageViews) {
+        [self createNeededImageViewsForNumberOfImages:remoteImageUrls.count];
+    }
+
     
     if (remoteImageUrls.count<=4) {
         for (int i=0; i<remoteImageUrls.count; i++) {
