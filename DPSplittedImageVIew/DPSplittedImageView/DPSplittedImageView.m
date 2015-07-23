@@ -46,6 +46,7 @@
     }
 
     if (self.borderColor) {
+        [self.moreContainerView setBackgroundColor:self.borderColor];
         self.borderColor = self.borderColor;
     }
 }
@@ -56,6 +57,8 @@
         [imageView.layer setBorderColor:self.borderColor.CGColor];
         [imageView.layer setBorderWidth:0.5];
     }
+    [self.layer setBorderColor:self.borderColor.CGColor];
+    [self.layer setBorderWidth:1];
 }
 
 -(void)createNeededImageViewsForNumberOfImages:(NSInteger)countImages{
@@ -136,7 +139,6 @@
 
         
         self.moreContainerView = [[UIView alloc]initWithFrame:frame];
-        [self.moreContainerView setBackgroundColor:self.borderColor];
         [self addSubview:self.moreContainerView];
         frame.origin = CGPointMake(0, 0);
         frame.size.width *= 0.7;
