@@ -58,7 +58,7 @@
         [imageView.layer setBorderWidth:0.5];
     }
     [self.layer setBorderColor:self.borderColor.CGColor];
-    [self.layer setBorderWidth:1];
+    [self.layer setBorderWidth:0.3];
 }
 
 -(void)createNeededImageViewsForNumberOfImages:(NSInteger)countImages{
