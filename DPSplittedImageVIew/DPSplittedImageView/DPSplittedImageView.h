@@ -19,6 +19,7 @@
 @property (nonatomic,strong) UILabel *moreLabel;
 @property (nonatomic,strong) UIView *moreContainerView;
 
-@property(nonatomic,strong) UIColor *borderColor;
+@property(nonatomic,strong) UIColor  *borderColor;
+@property(nonatomic,strong) NSNumber *moreLabelScale; //default=nil which keeps scale at 1.0
 
 @end

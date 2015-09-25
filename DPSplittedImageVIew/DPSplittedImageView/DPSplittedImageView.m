@@ -141,8 +141,10 @@
         self.moreContainerView = [[UIView alloc]initWithFrame:frame];
         [self addSubview:self.moreContainerView];
         frame.origin = CGPointMake(0, 0);
-        frame.size.width *= 0.7;
-        frame.size.height *= 0.7;
+        if (self.moreLabelScale) {
+            frame.size.width *= self.moreLabelScale.floatValue;
+            frame.size.height *= self.moreLabelScale.floatValue;
+        }
         
         self.moreLabel = [[UILabel alloc]initWithFrame:frame];
         [self.moreLabel setFont:[UIFont boldSystemFontOfSize:13]];
